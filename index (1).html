@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parnautica – Barcos, Quadriciclos e Motores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="#" class="logo">
+    <div class="logo-icon">⚓</div>
+    <span class="logo-text">Par<span>nautica</span></span>
+  </a>
+  <nav>
+    <a href="#barcos">Barcos</a>
+    <a href="#quadriciclos">Quadriciclos</a>
+    <a href="#motores">Motores</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="header-actions">
+    <a href="tel:+5544991112097" class="phone-link">
+      <span>📞</span>
+      <span>(44) 99111-2097</span>
+    </a>
+    <a href="https://wa.me/5544991112097" target="_blank" class="btn-primary">Solicitar Orçamento</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="mobile-nav" id="mobileNav">
+  <a href="#barcos" onclick="closeMenu()">Barcos</a>
+  <a href="#quadriciclos" onclick="closeMenu()">Quadriciclos</a>
+  <a href="#motores" onclick="closeMenu()">Motores</a>
+  <a href="#sobre" onclick="closeMenu()">Sobre</a>
+  <a href="#contato" onclick="closeMenu()">Contato</a>
+  <a href="https://wa.me/5544991112097" target="_blank" class="btn-primary" style="width: fit-content; margin-top: 8px;">💬 WhatsApp</a>
+</div>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Mais de 10 anos de experiência no mercado
+    </div>
+
+    <h1>Potência &<br><span class="accent">Aventura</span></h1>
+
+    <p class="hero-sub">
+      Barcos, quadriciclos e motores de alta performance.
+      Encontre o equipamento perfeito para dominar águas e trilhas.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#barcos" class="btn-primary" style="padding: 14px 32px; font-size: 15px;">
+        Ver Catálogo →
+      </a>
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-outline" style="padding: 14px 32px; font-size: 15px;">
+        Fale com Especialista
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Anos no mercado</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Produtos originais</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+<section id="barcos">
+  <div class="section-head">
+    <div>
+      <div class="section-tag"><div class="line"></div><span>Navegação</span></div>
+      <h2>Barcos &<br>Embarcações</h2>
+    </div>
+    <div>
+      <p class="section-desc">De lanchas esportivas a barcos de pesca, encontre a embarcação perfeita para suas aventuras aquáticas.</p>
+      <br>
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-outline">Ver todos os barcos →</a>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card" onclick="openGenericModal('atymar')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Lancha Atymar 23" loading="lazy">
+        <span class="card-badge">Destaque</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Lanchas</p>
+        <h3 class="card-name">Lancha Atymar 23</h3>
+        <div class="card-specs">
+          <span>Motor Evinrude</span><span>23 pés</span><span>Premium</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('atymar')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse na Lancha Atymar 23." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openGenericModal('bote')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Bote Inflável SR 4.20m" loading="lazy">
+        <span class="card-badge">Completo 2024</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Bote Inflável</p>
+        <h3 class="card-name">Bote Inflável SR 4.20m</h3>
+        <div class="card-specs">
+          <span>Mercury 30HP</span><span>4.20m</span><span>6 pessoas</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('bote')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Bote Inflável SR 4.20m." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openGenericModal('traira')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Barco Traíra 600" loading="lazy">
+        <span class="card-badge">Parnautica</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Pesca</p>
+        <h3 class="card-name">Barco Traíra 600</h3>
+        <div class="card-specs">
+          <span>Alumínio</span><span>6m</span><span>Motor Mercury</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('traira')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Barco Traíra 600." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+<section id="quadriciclos" class="section-alt">
+  <div class="section-head">
+    <div>
+      <div class="section-tag"><div class="line"></div><span>Off-Road</span></div>
+      <h2>Quadriciclos<br>& UTVs</h2>
+    </div>
+    <div>
+      <p class="section-desc">Domine qualquer terreno com nossos UTVs e quadriciclos CFMoto. Do lazer ao trabalho, temos o modelo ideal.</p>
+      <br>
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-outline">Ver todos →</a>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card" onclick="openUtvModal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="CFMoto UTV Vermelho" loading="lazy">
+        <span class="card-badge">Destaque</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); border-radius:20px; padding:4px 10px; font-size:11px; color:#fff; display:flex; align-items:center; gap:5px;">
+          <span>📷</span><span>4 fotos</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">UTV</p>
+        <h3 class="card-name">CFMoto UTV Vermelho</h3>
+        <div class="card-specs">
+          <span>Side by Side</span><span>4x4</span><span>Cabine</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openUtvModal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Fotos</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto UTV Vermelho." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openModal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Quadriciclo CFMoto CForce 625" loading="lazy">
+        <span class="card-badge" style="background: #e8a020;">OFERTA</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Quadriciclo</p>
+        <h3 class="card-name">Quadriciclo CFMoto CForce 625</h3>
+        <div class="card-specs">
+          <span>520cc</span><span>4x4</span><span>Demonstração</span>
+        </div>
+        <div style="display:flex; align-items:baseline; gap:10px; margin-bottom:16px;">
+          <p class="card-price" style="margin-bottom:0;">Preço Imperdível</p>
+          <span style="font-size:12px; color:#e8a020; font-weight:500;">-R$15.000</span>
+        </div>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openModal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Oferta</button>
+          <a href="https://instagram.com/parnautica" target="_blank" class="btn-outline" onclick="event.stopPropagation()">Ver +</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="product-card" onclick="openCamoModal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="CFMoto UForce U10 Pro Highland" loading="lazy">
+        <span class="card-badge">90 HP</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); border-radius:20px; padding:4px 10px; font-size:11px; color:#fff; display:flex; align-items:center; gap:5px;">
+          <span>📷</span><span>4 fotos</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">UTV</p>
+        <h3 class="card-name">CFMoto UForce U10 Pro Highland</h3>
+        <div class="card-specs">
+          <span>90 HP</span><span>4x4</span><span>Camuflado</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openCamoModal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Fotos</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto UForce U10 Pro Highland." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="product-card" onclick="openGenericModal('cforce450')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="CFMoto CForce 450L Verde" loading="lazy">
+        <span class="card-badge">Novo</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Quadriciclo</p>
+        <h3 class="card-name">CFMoto CForce 450L Verde</h3>
+        <div class="card-specs">
+          <span>450cc</span><span>4x4</span><span>Automático</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('cforce450')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto CForce 450L Verde." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" onclick="openZforceModal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="CFMoto ZForce 950 Sport 4" loading="lazy">
+        <span class="card-badge">Sport 4</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); border-radius:20px; padding:4px 10px; font-size:11px; color:#fff; display:flex; align-items:center; gap:5px;">
+          <span>📷</span><span>3 fotos</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">UTV</p>
+        <h3 class="card-name">CFMoto ZForce 950 Sport 4</h3>
+        <div class="card-specs">
+          <span>950cc</span><span>4 lugares</span><span>Sport</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openZforceModal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Fotos</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto ZForce 950 Sport 4." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="product-card" onclick="openGoesModal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Goes Terrox 400L" loading="lazy">
+        <span class="card-badge">Novo</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+        <div style="position:absolute; bottom:10px; right:10px; background:rgba(0,0,0,0.6); backdrop-filter:blur(4px); border-radius:20px; padding:4px 10px; font-size:11px; color:#fff; display:flex; align-items:center; gap:5px;">
+          <span>📷</span><span>3 fotos</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Quadriciclo</p>
+        <h3 class="card-name">Goes Terrox 400L</h3>
+        <div class="card-specs">
+          <span>400cc</span><span>4x4</span><span>2 lugares</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGoesModal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Fotos</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Goes Terrox 400L." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div id="zforceModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:640px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #e8602a, #d4271f);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeZforceModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; z-index:2;">✕</button>
+      <p style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;">UTV · Sport</p>
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#f0ede8; letter-spacing:1px; margin-bottom:24px; line-height:1;">CFMoto ZForce 950 Sport 4</h3>
+      <div style="position:relative; border-radius:10px; overflow:hidden; margin-bottom:12px; background:#111;">
+        <img id="zforceMainImg" src="assets/img01.jpg" alt="ZForce 950" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; transition:opacity 0.3s;">
+        <div id="zforceImgLabel" style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); padding:4px 12px; border-radius:20px; font-size:12px; color:#fff;">Vista Frontal</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:24px;">
+        <div onclick="switchZforceImg(0)" id="zfThumb0" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid #d4271f; aspect-ratio:1; background:#111;"><img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div onclick="switchZforceImg(1)" id="zfThumb1" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;"><img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+        <div onclick="switchZforceImg(2)" id="zfThumb2" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;"><img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:24px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;"><span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Motor</span><span style="font-size:14px; color:#d4271f; font-weight:600;">950cc</span></div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;"><span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Lugares</span><span style="font-size:14px; color:#f0ede8; font-weight:500;">4 pessoas</span></div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;"><span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tipo</span><span style="font-size:14px; color:#f0ede8; font-weight:500;">Sport</span></div>
+      </div>
+      <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto ZForce 950 Sport 4." target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">💬 Consultar pelo WhatsApp</a>
+    </div>
+  </div>
+</div>
+<div id="goesModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:640px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #3a7a3a, #d4271f);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeGoesModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; z-index:2;">✕</button>
+      <p style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;">Quadriciclo · Goes</p>
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#f0ede8; letter-spacing:1px; margin-bottom:24px; line-height:1;">Goes Terrox 400L</h3>
+      <div style="position:relative; border-radius:10px; overflow:hidden; margin-bottom:12px; background:#111;">
+        <img id="goesMainImg" src="assets/img01.jpg" alt="Goes Terrox 400L" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; transition:opacity 0.3s;">
+        <div id="goesImgLabel" style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); padding:4px 12px; border-radius:20px; font-size:12px; color:#fff;">Vista Frontal</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:24px;">
+        <div onclick="switchGoesImg(0)" id="goesThumb0" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid #d4271f; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchGoesImg(1)" id="goesThumb1" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchGoesImg(2)" id="goesThumb2" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:24px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Motor</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">400cc</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tração</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">4x4</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Lugares</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">2 pessoas</span>
+        </div>
+      </div>
+      <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Goes Terrox 400L." target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">💬 Consultar pelo WhatsApp</a>
+    </div>
+  </div>
+</div>
+<div id="genericModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:520px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #d4271f, #a01810);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeGenericModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center;">✕</button>
+      <p id="gm-cat" style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;"></p>
+      <h3 id="gm-title" style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#f0ede8; letter-spacing:1px; margin-bottom:20px; line-height:1;"></h3>
+      <img id="gm-img" src="" alt="" style="width:100%; border-radius:10px; margin-bottom:12px; object-fit:cover; aspect-ratio:4/3; display:block; transition:opacity 0.3s;">
+      <div id="gm-thumbs" style="display:none; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:14px;"></div>
+      <div id="gm-specs" style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:20px;"></div>
+      <p id="gm-desc" style="font-size:14px; color:#a09d98; line-height:1.7; margin-bottom:22px; font-weight:300;"></p>
+      <a id="gm-wa" href="#" target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">💬 Consultar pelo WhatsApp</a>
+    </div>
+  </div>
+</div>
+<div id="utvModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:640px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #d4271f, #c0392b);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeUtvModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; z-index:2;">✕</button>
+
+      <p style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;">UTV · Destaque</p>
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#f0ede8; letter-spacing:1px; margin-bottom:24px; line-height:1;">CFMoto UTV Vermelho</h3>
+
+      
+      <div style="position:relative; border-radius:10px; overflow:hidden; margin-bottom:12px; background:#111;">
+        <img id="utvMainImg" src="assets/img01.jpg" alt="CFMoto UTV Vermelho" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; transition: opacity 0.3s;">
+        <div id="utvImgLabel" style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); padding:4px 12px; border-radius:20px; font-size:12px; color:#fff;">Exterior</div>
+      </div>
+
+      
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:24px;">
+        <div onclick="switchUtvImg(0)" id="utvThumb0" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid #d4271f; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchUtvImg(1)" id="utvThumb1" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchUtvImg(2)" id="utvThumb2" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchUtvImg(3)" id="utvThumb3" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </div>
+
+      
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:24px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tração</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">4x4</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tipo</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">Side by Side</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Interior</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">Highland</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto UTV Vermelho. Gostaria de saber mais informações." target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">
+        💬 Consultar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<div id="camoModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:640px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #5a6e3a, #d4271f);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeCamoModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; z-index:2;">✕</button>
+
+      <p style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;">UTV · 90 HP</p>
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:34px; color:#f0ede8; letter-spacing:1px; margin-bottom:24px; line-height:1;">CFMoto UForce U10 Pro Highland</h3>
+
+      
+      <div style="position:relative; border-radius:10px; overflow:hidden; margin-bottom:12px; background:#111;">
+        <img id="camoMainImg" src="assets/img01.jpg" alt="UForce U10 Pro" style="width:100%; aspect-ratio:16/10; object-fit:cover; display:block; transition: opacity 0.3s;">
+        <div id="camoImgLabel" style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.65); backdrop-filter:blur(4px); padding:4px 12px; border-radius:20px; font-size:12px; color:#fff;">Vista Frontal</div>
+      </div>
+
+      
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:24px;">
+        <div onclick="switchCamoImg(0)" id="camoThumb0" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid #d4271f; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchCamoImg(1)" id="camoThumb1" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchCamoImg(2)" id="camoThumb2" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div onclick="switchCamoImg(3)" id="camoThumb3" style="border-radius:8px; overflow:hidden; cursor:pointer; border:2px solid transparent; aspect-ratio:1; background:#111;">
+          <img src="assets/img01.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </div>
+
+      
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:24px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Potência</span>
+          <span style="font-size:14px; color:#d4271f; font-weight:600;">90 HP</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tração</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">4x4</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Interior</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">Highland</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no CFMoto UForce U10 Pro Highland. Gostaria de mais informações." target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">
+        💬 Consultar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<div id="mercury50Modal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.88); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(255,255,255,0.1); border-radius:16px; max-width:560px; width:100%; position:relative; overflow:hidden; max-height:90vh; overflow-y:auto;">
+    <div style="height:4px; background:linear-gradient(90deg, #d4271f, #222);"></div>
+    <div style="padding:32px 32px 28px;">
+      <button onclick="closeMercury50Modal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center;">✕</button>
+
+      <p style="font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#d4271f; font-weight:500; margin-bottom:10px;">Motor de Popa · Mercury</p>
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:#f0ede8; letter-spacing:1px; margin-bottom:20px; line-height:1;">Mercury 50 HP</h3>
+
+      <img src="assets/img01.jpg" alt="Mercury 50 HP" style="width:100%; border-radius:10px; margin-bottom:20px; object-fit:cover; aspect-ratio:4/3; display:block;">
+
+      <p style="font-size:14px; color:#a09d98; line-height:1.7; margin-bottom:22px; font-weight:300;">
+        Um dos motores de popa <strong style="color:#f0ede8;">mais populares e versáteis do Brasil</strong>, ideal para pesca e lazer em lanchas de alumínio ou fibra. Combina potência, leveza e robustez em um só pacote.
+      </p>
+
+      
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:22px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Potência</span>
+          <span style="font-size:15px; color:#d4271f; font-weight:600;">50 HP</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Cilindros</span>
+          <span style="font-size:15px; color:#f0ede8; font-weight:500;">3 cilindros</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Cilindrada</span>
+          <span style="font-size:15px; color:#f0ede8; font-weight:500;">697cc</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Ciclo</span>
+          <span style="font-size:15px; color:#f0ede8; font-weight:500;">2 tempos</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Peso</span>
+          <span style="font-size:15px; color:#f0ede8; font-weight:500;">72 – 85 kg</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px;">
+          <span style="display:block; font-size:10px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Partida</span>
+          <span style="font-size:15px; color:#f0ede8; font-weight:500;">Manual ou Elétrica</span>
+        </div>
+      </div>
+
+      
+      <div style="background:rgba(212,39,31,0.07); border:1px solid rgba(212,39,31,0.2); border-radius:8px; padding:14px 18px; display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+        <span style="font-size:26px;">🛡️</span>
+        <div>
+          <span style="display:block; font-size:12px; color:#d4271f; font-weight:600; letter-spacing:0.5px; margin-bottom:2px;">Garantia de Fábrica</span>
+          <span style="font-size:14px; color:#f0ede8;">3 anos direto do fabricante</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Motor Mercury 50 HP. Gostaria de saber mais." target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px; display:flex;">
+        💬 Consultar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+<div id="cforceModal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(0,0,0,0.85); backdrop-filter:blur(6px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#1a1a1e; border:1px solid rgba(212,39,31,0.3); border-radius:16px; max-width:520px; width:100%; position:relative; overflow:hidden;">
+    
+    <div style="height:4px; background:linear-gradient(90deg, #d4271f, #e8a020);"></div>
+    <div style="padding:36px 32px 32px;">
+      <button onclick="closeModal()" style="position:absolute; top:16px; right:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); color:#a09d98; width:32px; height:32px; border-radius:50%; cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center;">✕</button>
+
+      <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(232,160,32,0.12); border:1px solid rgba(232,160,32,0.3); border-radius:100px; padding:6px 16px; margin-bottom:20px;">
+        <span style="font-size:12px; color:#e8a020; letter-spacing:1.5px; text-transform:uppercase; font-weight:500;">🔥 Oferta Imperdível</span>
+      </div>
+
+      <img id="cforce625MainImg" src="assets/img01.jpg" alt="CFMoto CForce 625" style="width:100%; border-radius:10px; margin-bottom:12px; object-fit:cover; aspect-ratio:16/9;">
+
+      <h3 style="font-family:'Bebas Neue',sans-serif; font-size:34px; color:#f0ede8; letter-spacing:1px; margin-bottom:8px;">Quadriciclo 625 CFMOTO</h3>
+      <p style="font-size:15px; color:#a09d98; line-height:1.65; margin-bottom:24px; font-weight:300;">
+        Modelo de <strong style="color:#f0ede8;">demonstração (test drive)</strong>, super bem cuidado e pronto pra uso. Uma oportunidade única com mais de <strong style="color:#e8a020;">R$15.000 de desconto!</strong>
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:24px;">
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:11px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Condição</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">Demonstração</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:11px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Desconto</span>
+          <span style="font-size:14px; color:#e8a020; font-weight:500;">+R$15.000 OFF</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:11px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Tração</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">4x4</span>
+        </div>
+        <div style="background:#111113; border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:14px; text-align:center;">
+          <span style="display:block; font-size:11px; color:#7a7873; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:4px;">Transmissão</span>
+          <span style="font-size:14px; color:#f0ede8; font-weight:500;">Automático</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/5544991112097?text=Olá! Vi a oferta do Quadriciclo 625 CFMOTO (demonstração) com mais de R$15.000 de desconto e tenho interesse!" target="_blank" class="btn-primary" style="width:100%; justify-content:center; padding:14px; font-size:15px; border-radius:8px;">
+        💬 Quero Aproveitar a Oferta
+      </a>
+    </div>
+  </div>
+</div>
+<section id="motores">
+  <div class="section-head">
+    <div>
+      <div class="section-tag"><div class="line"></div><span>Propulsão</span></div>
+      <h2>Motores<br>de Popa</h2>
+    </div>
+    <div>
+      <p class="section-desc">Motores das melhores marcas mundiais. Potência, economia e confiabilidade para sua embarcação.</p>
+      <br>
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-outline">Ver todos →</a>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    <div class="product-card" onclick="openGenericModal('mercury30')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Motor Mercury 30 HP" loading="lazy">
+        <span class="card-badge">Best Seller</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Mercury</p>
+        <h3 class="card-name">Motor Mercury 30 HP</h3>
+        <div class="card-specs">
+          <span>30 HP</span><span>2 tempos</span><span>Estrutura Robusta</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('mercury30')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Motor Mercury 30 HP." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="product-card" onclick="openGenericModal('mercuryProXS')" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Motor Mercury 115 HP Pro XS" loading="lazy">
+        <span class="card-badge">Pro XS</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Mercury</p>
+        <h3 class="card-name">Motor Mercury 115 HP Pro XS</h3>
+        <div class="card-specs">
+          <span>Alta Performance</span><span>Competição</span><span>Racing</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openGenericModal('mercuryProXS')" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Motor Mercury 115 HP Pro XS." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openMercury50Modal()" style="cursor:pointer;">
+      <div class="card-img">
+        <img src="assets/img01.jpg" alt="Motor Mercury 50 HP" loading="lazy">
+        <span class="card-badge">Popular</span>
+        <button class="card-like" onclick="event.stopPropagation(); toggleLike(this)">♡</button>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Mercury</p>
+        <h3 class="card-name">Motor Mercury 50 HP</h3>
+        <div class="card-specs">
+          <span>50 HP</span><span>2 tempos</span><span>3 cilindros</span>
+        </div>
+        <p class="card-price">Sob consulta</p>
+        <div class="card-actions">
+          <button onclick="event.stopPropagation(); openMercury50Modal()" class="btn-primary" style="flex:1; justify-content:center;">Ver Detalhes</button>
+          <a href="https://wa.me/5544991112097?text=Olá! Tenho interesse no Motor Mercury 50 HP." target="_blank" class="btn-outline" onclick="event.stopPropagation()">💬 Consultar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sobre" class="section-alt">
+  <div class="section-head">
+    <div>
+      <div class="section-tag"><div class="line"></div><span>Por que nos escolher</span></div>
+      <h2>Experiência<br>& Qualidade</h2>
+    </div>
+    <p class="section-desc">Há mais de 10 anos no mercado, oferecemos as melhores soluções em equipamentos náuticos e off-road com atendimento físico e online.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Garantia de 10 Anos</h3>
+      <p>Até 10 anos de garantia em produtos selecionados. Sua tranquilidade é nossa prioridade absoluta.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+      </div>
+      <h3>Suporte Especializado</h3>
+      <p>Equipe técnica disponível para tirar todas as suas dúvidas antes e após a compra.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <h3>Entrega Nacional</h3>
+      <p>Entregamos em todo o Brasil com seguro completo e rastreamento em tempo real.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <h3>Produtos Originais</h3>
+      <p>Trabalhamos apenas com marcas premium e produtos 100% originais de fábrica, sempre.</p>
+    </div>
+  </div>
+</section>
+<section id="cta">
+  <div class="cta-inner">
+    <div class="hero-badge" style="margin-bottom: 0;">
+      <span class="dot"></span>
+      Atendimento personalizado
+    </div>
+    <h2>Pronto Para Sua<br><span style="color: #d4271f;">Próxima Aventura?</span></h2>
+    <p>Entre em contato com nossa equipe de especialistas e encontre o equipamento perfeito para suas necessidades. Orçamento sem compromisso.</p>
+
+    <div class="cta-btns">
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-primary">
+        Solicitar Orçamento →
+      </a>
+      <a href="https://wa.me/5544991112097" target="_blank" class="btn-outline">
+        💬 WhatsApp
+      </a>
+    </div>
+
+    <div class="trust-strip">
+      <div class="trust-item">
+        <span class="trust-dot"></span>
+        <span>Atendimento Físico e Online</span>
+      </div>
+      <div class="trust-item">
+        <span style="font-weight: 500; color: #f0ede8;">10+</span>
+        <span>anos de experiência</span>
+      </div>
+      <div class="trust-item">
+        <span>📍</span>
+        <span>Terra de Areia, RS</span>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="contato">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <div class="logo-icon">⚓</div>
+        <span class="logo-text">Par<span>nautica</span></span>
+      </a>
+      <p>Há mais de 10 anos oferecendo as melhores soluções em barcos, quadriciclos e motores. Qualidade e confiança para suas aventuras.</p>
+      <div>
+        <div class="contact-item"><span>📍</span><span>Estrada do Curumim, 1529 - Terra de Areia, RS</span></div>
+        <div class="contact-item"><span>📞</span><span>(44) 99111-2097</span></div>
+        <div class="contact-item"><span>✉️</span><span>contato@parnautica.com.br</span></div>
+        <div class="contact-item"><span>🕐</span><span>Seg - Sáb: 8h às 18h</span></div>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Produtos</h4>
+      <a href="#barcos">Barcos</a>
+      <a href="#quadriciclos">Quadriciclos</a>
+      <a href="#motores">Motores</a>
+      <a href="#">Acessórios</a>
+      <a href="#">Peças</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#">Depoimentos</a>
+      <a href="#">Blog</a>
+      <a href="#">Trabalhe Conosco</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Suporte</h4>
+      <a href="#">Central de Ajuda</a>
+      <a href="#">Financiamento</a>
+      <a href="#">Garantia</a>
+      <a href="#">Assistência Técnica</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Parnautica. Todos os direitos reservados.</p>
+    <div class="socials">
+      <a href="#" class="social-btn" aria-label="Facebook">f</a>
+      <a href="https://instagram.com/parnautica" target="_blank" class="social-btn" aria-label="Instagram">in</a>
+      <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+    </div>
+  </div>
+</footer>
+<div class="wa-float">
+  <a href="https://wa.me/5544991112097" target="_blank" class="wa-btn" rel="noopener noreferrer">
+    <span class="wa-icon">💬</span>
+    <span>Fale no WhatsApp</span>
+  </a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
